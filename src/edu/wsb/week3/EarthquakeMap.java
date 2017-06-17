@@ -1,4 +1,4 @@
-package week2;
+package edu.wsb.week3;
 
 import de.fhpotsdam.unfolding.UnfoldingMap;
 import de.fhpotsdam.unfolding.geo.Location;
@@ -18,8 +18,7 @@ public class EarthquakeMap extends PApplet {
 
     Location m1 = new Location(65.0,65.0);
     SimplePointMarker mark1 = new SimplePointMarker(m1);
-    // TODO: Utworzyć dwie tablice długości 4 i typu Double szerokośćGeograficzna i długośćGeograficzna
-    // TODO: Wartości elementów tablic wedle uznania
+    //todo Utworzyć ArrayList lub HashSet lub tablicę klasy Lokacja i uzupełnić go o dane wedle uznania.
 
 
 
@@ -44,11 +43,11 @@ public class EarthquakeMap extends PApplet {
         background(10);
         map.draw();
         /*
-         Todo: Dodać pętle for lub while, a poniższą linijkę tak zmodyfikować, by
+         Todo: Dodać pętle for each, a poniższą linijkę tak zmodyfikować, by
           todo na mapie zostały zaznaczone wszystkie punkty, a nie jeden jak w kodzie
           todo     poniżej
         */
-        map.addMarker(marker(długośćGeograficzna[0],szerokośćGeograficzna[0]));
+        map.addMarker(marker(Lokacja.getDługośćGeograficzna(0),Lokacja.getSzerokośćGeograficzna(0)));
 
 
     }
